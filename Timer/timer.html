@@ -1,0 +1,29 @@
+<html>
+<head>
+<script src=  "javascript/timer.js" type="text/javascript"></script>
+ <link href="css/timer.css" rel="stylesheet">
+ </head>
+ <body>
+ <div id = "clock">
+ <span id="hour">00</span>
+ <span id = "minute">00</span>
+ <span id = "second">00</span>
+ </div>
+ <div class = "buttons">
+ <button type="button" id = "start">start</button>
+ <button type="button" id="reset">reset</button>
+ <button type="button" id = "pause">pause</button>
+ <button type="button" id = "resume">resume</button>
+ </div>
+
+ 
+<script>
+function onBodyLoad(){
+	time.init('start', 'reset', 'pause', 'resume', 'hour', 'minute', 'second');
+	
+}
+window.addEventListener('load', onBodyLoad);
+</script>
+</body>
+
+</html>
